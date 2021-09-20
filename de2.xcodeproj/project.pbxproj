@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		CE12F79926F8699100D9D29A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE12F79726F8699100D9D29A /* Main.storyboard */; };
 		CE12F79B26F8699200D9D29A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE12F79A26F8699200D9D29A /* Assets.xcassets */; };
 		CE12F79E26F8699200D9D29A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE12F79C26F8699200D9D29A /* LaunchScreen.storyboard */; };
+		CE12F7A826F8843E00D9D29A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CE12F7A726F8843E00D9D29A /* Alamofire */; };
+		CE12F7AC26F8846D00D9D29A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = CE12F7AB26F8846D00D9D29A /* SwiftyJSON */; };
+		CE12F7AF26F88F3E00D9D29A /* RegisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12F7AE26F88F3E00D9D29A /* RegisViewController.swift */; };
+		CE12F7B226F89B5600D9D29A /* ProfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12F7B126F89B5600D9D29A /* ProfViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		CE12F79A26F8699200D9D29A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE12F79D26F8699200D9D29A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE12F79F26F8699200D9D29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE12F7AE26F88F3E00D9D29A /* RegisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisViewController.swift; sourceTree = "<group>"; };
+		CE12F7B126F89B5600D9D29A /* ProfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE12F7AC26F8846D00D9D29A /* SwiftyJSON in Frameworks */,
+				CE12F7A826F8843E00D9D29A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +68,8 @@
 				CE12F79326F8699100D9D29A /* SceneDelegate.swift */,
 				CE12F79526F8699100D9D29A /* ViewController.swift */,
 				CE12F79726F8699100D9D29A /* Main.storyboard */,
+				CE12F7B126F89B5600D9D29A /* ProfViewController.swift */,
+				CE12F7AE26F88F3E00D9D29A /* RegisViewController.swift */,
 				CE12F79A26F8699200D9D29A /* Assets.xcassets */,
 				CE12F79C26F8699200D9D29A /* LaunchScreen.storyboard */,
 				CE12F79F26F8699200D9D29A /* Info.plist */,
@@ -83,6 +93,10 @@
 			dependencies = (
 			);
 			name = de2;
+			packageProductDependencies = (
+				CE12F7A726F8843E00D9D29A /* Alamofire */,
+				CE12F7AB26F8846D00D9D29A /* SwiftyJSON */,
+			);
 			productName = de2;
 			productReference = CE12F78E26F8699100D9D29A /* de2.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +124,10 @@
 				Base,
 			);
 			mainGroup = CE12F78526F8699100D9D29A;
+			packageReferences = (
+				CE12F7A626F8843E00D9D29A /* XCRemoteSwiftPackageReference "alamofire" */,
+				CE12F7AA26F8846D00D9D29A /* XCRemoteSwiftPackageReference "swiftyjson" */,
+			);
 			productRefGroup = CE12F78F26F8699100D9D29A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE12F79626F8699100D9D29A /* ViewController.swift in Sources */,
+				CE12F7AF26F88F3E00D9D29A /* RegisViewController.swift in Sources */,
 				CE12F79226F8699100D9D29A /* AppDelegate.swift in Sources */,
 				CE12F79426F8699100D9D29A /* SceneDelegate.swift in Sources */,
+				CE12F7B226F89B5600D9D29A /* ProfViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +359,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE12F7A626F8843E00D9D29A /* XCRemoteSwiftPackageReference "alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com/alamofire/alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+		CE12F7AA26F8846D00D9D29A /* XCRemoteSwiftPackageReference "swiftyjson" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com/swiftyjson/swiftyjson.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE12F7A726F8843E00D9D29A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE12F7A626F8843E00D9D29A /* XCRemoteSwiftPackageReference "alamofire" */;
+			productName = Alamofire;
+		};
+		CE12F7AB26F8846D00D9D29A /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE12F7AA26F8846D00D9D29A /* XCRemoteSwiftPackageReference "swiftyjson" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE12F78626F8699100D9D29A /* Project object */;
 }
